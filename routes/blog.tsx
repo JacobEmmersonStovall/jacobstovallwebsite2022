@@ -5,11 +5,41 @@ import { tw } from "@twind";
 // Islands
 import NavBar from "../islands/NavBar.tsx";
 
-export default function BlogIndexPage(){
+interface Post {
+    title: string;
+    postDate: string;
+    markdownPath: string;
+    description: string;
+}
+
+export const handler: Handlers<Post[]> = {
+    async GET(_, ctx) {
+        const resp = await Deno.readTextFile(Deno.cwd() + "/static/blog/index.json");
+        const postList: Post[] = JSON.parse(resp);
+        return ctx.render(postList);
+    }
+}
+
+function BlogEntry(props: { entry: Post }){
+    var url = "/blog/" + props.entry.markdownPath
+    return (<div class={tw`mb-10`}>
+        <a href={url}><h2 class={tw`text-3xl`}>{ props.entry.title }</h2></a>
+        <h3>{ props.entry.postDate }</h3>
+        <p>{ props.entry.description }</p>
+    </div>)
+}
+
+export default function BlogIndexPage({ data }: PageProps<Post[]>){
     return (
-        <main class={tw`text-white bg-carnelian font-mono`}>
-            <NavBar />
-            <h1>Blog Page</h1>
-        </main>
+        <body class={tw`text-white bg-raisinblack font-mono`}>
+            <header>
+                <NavBar />
+            </header>
+            <main class={tw`w-2/3 m-auto`}>
+                <h1 class={tw`text-5xl text-center mb-4`}>Blog</h1>
+                { data.map(post => <BlogEntry entry={post} />) }
+            </main>
+        </body>
+        
     );
 }

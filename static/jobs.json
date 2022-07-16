@@ -1,0 +1,66 @@
+[
+    {
+        "company": "Brooksource (Contract-to-Hire for Microsoft)",
+        "jobTitle": "Full-Stack Software Engineer (Front-End Focus)",
+        "startTime": "May 2022",
+        "location": "Remote (Richmond, WA)",
+        "details": [
+            "Working on React based SharePoint extensions and webparts",
+            "Also working on Company Communicator (React/.NET Core/Azure) which allows companies to send messages across teams",
+            "Implementing Dashboards and Pipelines in Azure Dev Ops Environment Improving Company Communicators Monitoring and Deployment Automation"
+        ]
+    },
+    {
+        "company": "Bluetail",
+        "jobTitle": "Consulting Software Engineer",
+        "startTime": "October 2021",
+        "location": "Phoenix, AZ",
+        "details": [
+            "Currently working ~10-12 hours a week part time as a consultant helping the development team at Bluetail",
+            "My current focus has been on the administrative site (working in Express.js, Postgres, and React) to improve performance and give suggestions on better coding practices",
+            "I've improved pages that were taking seconds or minutes to load data down to milliseconds by optimizing the sql queries being made and improving the code",
+            "Cleaned up git repository and made presentation to development team on best git practices",
+            "Was originally brought on for a contract period of October - December and have been invited to continue from January - March, April - June, July - September"
+        ]
+    },
+    {
+        "company": "Offerpad",
+        "jobTitle": "Full-Stack Software Engineer",
+        "startTime": "October 2021",
+        "endTime": "May 2022",
+        "location": "Chandler, AZ",
+        "details": [
+            "Working as full stack developer on the internal application used by colleagues to help manage property buying / selling",
+            "Developing backends in Azure using Web Functions, ASP.NET Core MVC, and ASP.NET MVC 5",
+            "Developing UIs using React, Razor Pages, and Knockout.js",
+            "Was able to contribute from day 1 and have been able to consistently contribute to user stories on a daily basis",
+            "Have created and completed 100+ PRs in 6 months"
+        ]
+    },
+    {
+        "company": "American Express",
+        "jobTitle": "Infrastructure Engineer II",
+        "startTime": "June 2021",
+        "endTime": "October 2021",
+        "location": "Phoneix, AZ",
+        "details": [
+            "Supporting teams at the development, testing, and production levels with troubleshooting critical issues in apigee and envoy / gloo proxies",
+            "Helping to deploy and maintain proxies in a ~ 3 Billion Call / Month environment",
+            "Working on initiatives to help automate and improve deployment efforts (minimize manual work done for some tasks)"
+        ]
+    },
+    {
+        "company": "SAP",
+        "jobTitle": "Senior Agile Developer",
+        "startTime": "May 2021",
+        "endTime": "December 2016",
+        "location": "Tempe, AZ",
+        "details": [
+            "Experience Creating UI's from scratch (Manage Planning Configuration Sets, Manage Option Plans, Manage Category Assortments) and working with UIs of existing applications (Manage Promotional Offers, Manage Offer Content) using the SAPUI5/OpenUI5 framework",
+            "Experience using the SAPUI5 framework to create custom controls such as an image carousel dialog and a pseudo-pivot table",
+            "Developed oData services using CDS views (Preview Events, Manage Category Assortments) and ABAP (Manage Offer Content)",
+            "One of ~50 early talents from the global early talent pool selected for the second ever cohort of the SAP Academy for Engineering",
+            "Credited as one of three inventors for 2 patents created for work done with the Manage Option Plans application"
+        ]
+    }
+]
