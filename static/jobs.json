@@ -3,7 +3,7 @@
         "company": "Brooksource (Contract-to-Hire for Microsoft)",
         "jobTitle": "Full-Stack Software Engineer (Front-End Focus)",
         "startTime": "May 2022",
-        "location": "Remote (Richmond, WA)",
+        "location": "Remote (Redmond, WA)",
         "details": [
             "Working on React based SharePoint extensions and webparts",
             "Also working on Company Communicator (React/.NET Core/Azure) which allows companies to send messages across teams",
@@ -52,8 +52,8 @@
     {
         "company": "SAP",
         "jobTitle": "Senior Agile Developer",
-        "startTime": "May 2021",
-        "endTime": "December 2016",
+        "endTime": "May 2021",
+        "startTime": "December 2016",
         "location": "Tempe, AZ",
         "details": [
             "Experience Creating UI's from scratch (Manage Planning Configuration Sets, Manage Option Plans, Manage Category Assortments) and working with UIs of existing applications (Manage Promotional Offers, Manage Offer Content) using the SAPUI5/OpenUI5 framework",
