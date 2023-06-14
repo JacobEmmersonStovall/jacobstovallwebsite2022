@@ -1,26 +1,38 @@
 [
     {
+        "company": "Transact Campus",
+        "jobTitle": "Senior Software Engineer",
+        "startTime": "October 2022",
+        "location": "Remote (Scottsdale, AZ)",
+        "details": [
+            "Utilized C# .NET Core, Azure Table Storage, Cosmos DB, and Azure Service Bus to build robust microservices that offered secure and reliable access to our mobile credential solution.",
+            "Developed unit and integration tests using XUnit and Postman to thoroughly validate code and achieve high code coverage on all pull requests, ensuring that the codebase is of high quality.",
+            "Leveraged Power BI to create comprehensive reports that highlighted key metrics on the health, performance, and usage of our credentials, providing valuable insights to stakeholders."
+        ]
+    },
+    {
         "company": "Brooksource (Contract-to-Hire for Microsoft)",
         "jobTitle": "Full-Stack Software Engineer (Front-End Focus)",
         "startTime": "May 2022",
+        "endTime": "August 2022",
         "location": "Remote (Redmond, WA)",
         "details": [
-            "Working on React based SharePoint extensions and webparts",
-            "Also working on Company Communicator (React/.NET Core/Azure) which allows companies to send messages across teams",
-            "Implementing Dashboards and Pipelines in Azure Dev Ops Environment Improving Company Communicators Monitoring and Deployment Automation"
+            "Hired in a contract-to-hire capacity on an hourly W2 contract. Sweeping contractor layoffs affected this role and a hiring freeze prevented me from being brought on full-time.",
+            "Supported and built new functionality for React-based SharePoint webparts and extensions.",
+            "Improved the current internal company communicator application for Teams (React/.NET Core/Azure Cloud Functions). The app allows internal groups to send messages across teams and individuals at scale to make mass communications on the Teams platform easier.",
+            "Gained experience building pipelines, logging to application insights, creating azure dashboards from logs using kql queries, and building and deploying azure durable functions."
         ]
     },
     {
         "company": "Bluetail",
         "jobTitle": "Consulting Software Engineer",
         "startTime": "October 2021",
+        "endTime": "September 2022",
         "location": "Phoenix, AZ",
         "details": [
-            "Currently working ~10-12 hours a week part time as a consultant helping the development team at Bluetail",
-            "My current focus has been on the administrative site (working in Express.js, Postgres, and React) to improve performance and give suggestions on better coding practices",
-            "I've improved pages that were taking seconds or minutes to load data down to milliseconds by optimizing the sql queries being made and improving the code",
-            "Cleaned up git repository and made presentation to development team on best git practices",
-            "Was originally brought on for a contract period of October - December and have been invited to continue from January - March, April - June, July - September"
+            "Brought on in a Full-Time capacity after working contract to contract.",
+            "Developed a system for more quickly getting documents into the main application. App is built with a Postgres / Express backend with a Vue Frontend. Additionally, uses tesseract for blank page and page orientation detection. This system reduced the bulk upload process time by ~50%.",
+            "Helped reduce search times from 15-20 seconds to under a second."
         ]
     },
     {

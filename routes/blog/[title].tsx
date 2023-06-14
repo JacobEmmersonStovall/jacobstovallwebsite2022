@@ -1,7 +1,8 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import { Marked } from "markdown";
+import { marky } from "marky";
+import { Head } from "$fresh/runtime.ts";
 import { DOMParser } from "denodom";
 
 // Islands
@@ -37,7 +38,7 @@ export default function BlogPostPage({ data }: PageProps<Post | null>){
         return (<h1>Page not found!</h1>);
     }
 
-    var markdownContentHtmlString : string = Marked.parse(data.content).content;
+    var markdownContentHtmlString : string = marky(data.content);
     
     // Injecting stylings into html since I don't think parser has an option to
     markdownContentHtmlString = markdownContentHtmlString.replaceAll("<p", "<p class='text-md mb-5'");
@@ -59,6 +60,10 @@ export default function BlogPostPage({ data }: PageProps<Post | null>){
             </main>
             
             <p style="display: none" class={tw`text-md list-disc ml-8 mb-5 font-bold`}></p>
+            <Head>
+                <title>{data.title} | Jacob Stovall - Software Engineer</title>
+                <meta name="description" content={data.description} />
+            </Head>
         </body>
         
     );

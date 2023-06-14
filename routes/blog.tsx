@@ -1,6 +1,8 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
+import { Head } from "$fresh/runtime.ts";
+
 
 // Islands
 import NavBar from "../islands/NavBar.tsx";
@@ -39,6 +41,10 @@ export default function BlogIndexPage({ data }: PageProps<Post[]>){
                 <h1 class={tw`text-5xl text-center mb-4`}>Blog</h1>
                 { data.map(post => <BlogEntry entry={post} />) }
             </main>
+            <Head>
+                <title>Blog | Jacob Stovall - Software Engineer</title>
+                <meta name="description" content="A blog with some thoughts about software engineering and various other topics." />
+            </Head>
         </body>
         
     );
