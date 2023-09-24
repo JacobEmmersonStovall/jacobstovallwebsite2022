@@ -1,3 +1,3 @@
-# Jacob Stovall Website 2022
+# Jacob Stovall Website ~~2022~~ 2023
 
-Knowing that people are now viewing my website without advertising it at all, I've created this project in order to make it more presentable.
+Edit 2023: I made website just a landing page. Also removed contact info since recruiters can contact me through the proper venues if needed.

@@ -1,38 +1,27 @@
-/** @jsx h */
-import { h } from "preact";
-import { tw } from "@twind";
-import { Head } from "$fresh/runtime.ts";
-import { Handlers, PageProps } from "$fresh/server.ts";
-
-// Islands
-import NavBar from "../islands/NavBar.tsx";
-import EmploymentHistory, { Employment } from "../islands/EmploymentHistory.tsx"
-
-export const handler: Handlers<Employment[]> = {
-    async GET(_, ctx) {
-        const resp = await Deno.readTextFile(Deno.cwd() + "/static/jobs.json");
-        const employmentHistory: Employment[] = JSON.parse(resp);
-        return ctx.render(employmentHistory);
-    }
-}
-
-export default function HomePage({ data }: PageProps<Employment[]>) {
-    return (
-        <body class={tw`text-white bg-raisinblack font-mono`}>
-            <header>
-                <NavBar />
-            </header>
-            <main>
-                <div class={tw`w-5/6 m-auto`}>
-                    <h1 class={tw`text-5xl text-center mb-4`} >Jacob Stovall</h1>
-                    <EmploymentHistory history={data} />
-
-                    <Head>
-                        <title>Jacob Stovall - Software Engineer</title>
-                        <meta name="description" content="Jacob Stovall is Software Engineer based out of Chandler, Arizona with Work Experience at SAP, Offerpad, AMEX, and Microsoft." />
-                    </Head>
-                </div>
-            </main>
-        </body>
-    );
+export default function Home() {
+  return (
+  <div className={"font-['Oswald'] bg-black text-white h-screen"}>
+    <h1 className={"pt-[10%] text-center text-5xl opacity-100 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
+    <h1 className={"pl-[10%] mt-[-4%] text-center text-5xl opacity-[75%] text-red-200 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
+    <h1 className={"pl-[20%] mt-[-4%] text-center text-5xl opacity-[63%] text-green-300 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
+    <h1 className={"pl-[30%] mt-[-4%] text-center text-5xl opacity-[42%] text-blue-400 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
+    <h1 className={"pl-[40%] mt-[-4%] text-center text-5xl opacity-[24%] text-yellow-400 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
+    <h1 className={"pl-[50%] mt-[-4%] text-center text-5xl opacity-[12%] text-purple-400 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
+    <div className={"text-center mt-[20%] text-2xl"}>
+      Software Engineer Working at ASU. Formerly at:
+      <ul>
+        <li>SAP</li>
+        <li>Microsoft</li>
+        <li>American Express</li>
+        <li>Transact Campus</li>
+        <li>Offerpad</li>
+        <li>Bluetail</li>
+      </ul>
+      <br />
+      4.0 GPA - ASU in CS
+      <br />
+      <br />
+      There's ways to find me.
+    </div>
+  </div>);
 }
