@@ -1,13 +1,13 @@
 export default function Home() {
   return (
-  <div className={"font-['Oswald'] bg-black text-white h-screen"}>
+  <div>
     <h1 className={"pt-[10%] text-center text-5xl opacity-100 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
     <h1 className={"pl-[10%] mt-[-4%] text-center text-5xl opacity-[75%] text-red-200 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
     <h1 className={"pl-[20%] mt-[-4%] text-center text-5xl opacity-[63%] text-green-300 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
     <h1 className={"pl-[30%] mt-[-4%] text-center text-5xl opacity-[42%] text-blue-400 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
     <h1 className={"pl-[40%] mt-[-4%] text-center text-5xl opacity-[24%] text-yellow-400 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
     <h1 className={"pl-[50%] mt-[-4%] text-center text-5xl opacity-[12%] text-purple-400 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
-    <div className={"text-center mt-[20%] text-2xl"}>
+    <div className={"text-center mt-[12%] text-2xl"}>
       Software Engineer Working at ASU. Formerly at:
       <ul>
         <li>SAP</li>
