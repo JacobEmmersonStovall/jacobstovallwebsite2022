@@ -1,4 +1,8 @@
-export default function Home() {
+import ConsoleWriter from "../islands/ConsoleWriter.tsx";
+import { PageProps } from "https://deno.land/x/fresh@1.4.3/server.ts";
+
+export default function Home({ url } : PageProps) {
+
   return (
   <div>
     <h1 className={"pt-[10%] text-center text-5xl opacity-100 overflow-hidden whitespace-nowrap	"}>Jacob Stovall</h1>
@@ -22,6 +26,7 @@ export default function Home() {
       <br />
       <br />
       There's ways to find me.
+      <ConsoleWriter domain={url.host} protocol={url.protocol} />
     </div>
   </div>);
 }

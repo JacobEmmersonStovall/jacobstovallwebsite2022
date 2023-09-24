@@ -1,6 +1,11 @@
 import { AppProps } from "$fresh/server.ts";
 
-export default function App({ Component }: AppProps) {
+export default function App({ Component, url }: AppProps) {
+
+  function requestLogs(){
+    console.log(url.href);
+  }
+
   return (
     <html>
       <head>
@@ -13,6 +18,7 @@ export default function App({ Component }: AppProps) {
       </head>
       <body className={"font-['Oswald'] bg-black text-white h-screen"}>
         <Component />
+        {requestLogs()}
       </body>
     </html>
   );
